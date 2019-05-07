@@ -1,0 +1,15 @@
+<div class="divcss">
+<p>
+ Parent Component
+</p>
+<p>Name:<span [style.color]="'red'">{{stdFullName}}</span> </p>	
+
+  <app-child-one [ctMsg]="cityMsg"
+  [ctArray]="cityArray"
+  [studentAddMsg]="stdAddMsg"
+  [color]="'red'"
+  [stdLeader] = "stdLeaderObj"
+  (addStudentEvent)="saveData($event)"
+  (sendMsgEvent) = "printMsg($event)"></app-child-one>
+</div>
+

@@ -1,0 +1,18 @@
+<div class="divcsschild">
+	<div>child Component</div>
+<h3>{{childTitle}}</h3>
+			<b [style.color]="color"> {{ctMsg}}</b>
+			<ul>
+			 <li *ngFor = "let cname of cityArray">
+				{{cname}}
+			 </li>
+			</ul>
+			 <p> {{studentAddMsg}} : {{myStdLeader.fname +' '+ myStdLeader.lname}}  </p> 
+			 First Name:<input (input)="student.fname=$event.target.value" /> <br/>
+			 Last Name:<input (input)="student.lname=$event.target.value" />
+			 <br/> <button (click)="addStudent()">Add Student</button>
+			</div>
+		
+<div>
+			
+</div>
